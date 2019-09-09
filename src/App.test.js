@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer';
 
 const isDebugging = () => {
   const debugging_mode = {
-    headless: true,
+    headless: false,
     slowMo: 250,
     devtools: true
   };
