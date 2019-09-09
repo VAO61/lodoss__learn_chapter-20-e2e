@@ -1,0 +1,13 @@
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__control {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 60px;
+  }
+}

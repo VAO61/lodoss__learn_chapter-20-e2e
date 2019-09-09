@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  // margin: 10px; // temporarily
+  box-sizing: border-box;
+  position: relative;
+
+  *::after,
+  *::before {
+    position: relative;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1 {
+  padding-top: 26px;
+  font-size: 36px;
+  line-height: 42px;
+}

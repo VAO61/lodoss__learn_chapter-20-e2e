@@ -1,0 +1,11 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__main {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+}

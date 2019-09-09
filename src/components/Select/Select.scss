@@ -1,0 +1,59 @@
+$defaultClassReactSelect: "[class*='css-']";
+
+.select {
+  padding: 0;
+  &#{$defaultClassReactSelect} {
+    appearance: none;
+    outline: none;
+  }
+
+  &__control {
+    &#{$defaultClassReactSelect} {
+      background-color: inherit;
+      border: none;
+      min-height: inherit;
+      appearance: none;
+      outline: none;
+      box-shadow: none;
+
+      &:hover {
+        appearance: none;
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__value-container {
+    &#{$defaultClassReactSelect} {
+      padding: 0;
+    }
+  }
+
+  &__placeholder,
+  &__single-value {
+    &#{$defaultClassReactSelect} {
+      color: $color-text;
+      margin: 0;
+    }
+  }
+
+  &__dropdown-indicator {
+    &#{$defaultClassReactSelect} {
+      color: inherit;
+    }
+  }
+
+  &__indicator-separator {
+    &#{$defaultClassReactSelect} {
+      display: none;
+    }
+  }
+
+  &__input {
+    > input {
+      width: 100% !important;
+    }
+  }
+}

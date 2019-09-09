@@ -1,0 +1,33 @@
+.no-results {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__container {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  &__title,
+  &__desc {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $color-brand;
+    font-weight: bold;
+  }
+
+  // &__desc {
+  // }
+}

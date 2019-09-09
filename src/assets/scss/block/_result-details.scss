@@ -1,0 +1,19 @@
+.result-details {
+  &__language {
+    color: $color-text_lighter;
+  }
+
+  &__stars-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 9px;
+  }
+
+  &__count {
+    font-size: 18px;
+    color: $color-shadow;
+  }
+}

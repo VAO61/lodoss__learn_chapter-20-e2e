@@ -1,0 +1,32 @@
+.header {
+  background-color: $color-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // color: $color-bright;
+
+  &__logo {
+    margin-left: 30px;
+  }
+
+  &__control {
+    padding-top: $offset;
+    padding-right: $offset * 1.5;
+    padding-bottom: $offset;
+  }
+
+  &__link {
+    margin-right: $offset;
+    font-size: 1em;
+    color: $color-text_lighter;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      color: $color-bright;
+      cursor: default;
+    }
+  }
+}
