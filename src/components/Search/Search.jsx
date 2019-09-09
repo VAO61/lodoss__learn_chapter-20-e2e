@@ -11,7 +11,7 @@ import { updateSearchList } from '../../store/actions';
 
 const Search = ({ className = '', updateResultSearch }) => {
   const [type, setType] = useState('Repositories');
-  const [lang, setLang] = useState('');
+  const [lang, setLang] = useState('Javascript');
   const [searchValue, setSearchValue] = useState('');
 
   const handleClickSearch = useCallback(async () => {
@@ -49,6 +49,25 @@ const Search = ({ className = '', updateResultSearch }) => {
       </div>
       <div className="search__item">
         <Select
+          options={[{ value: 'Javascript', label: 'Javascript' }]}
+          value={lang}
+          onChange={handleChangeLang}
+          defaultInputValue={lang}
+          placeholder="Language"
+        />
+        {/* <select
+          name="test"
+          id="select-lang"
+          placeholder="Language"
+          onChange={handleChangeLang}
+          // value={lang}
+        >
+          <label htmlFor="test">a</label>
+          <option value=""></option>
+          <option value="Javascript">Javascript</option>
+          <option value="CSS">CSS</option>
+        </select> */}
+        {/* <Select
           options={[
             { value: 'Javascript', label: 'Javascript' },
             { value: 'CSS', label: 'CSS' },
@@ -65,10 +84,11 @@ const Search = ({ className = '', updateResultSearch }) => {
           onChange={handleChangeLang}
           defaultInputValue={lang}
           placeholder="Language"
-        />
+        /> */}
       </div>
       <div className="search__item">
         <input
+          id="search-input"
           className="search__input"
           type="text"
           value={searchValue}
@@ -79,6 +99,7 @@ const Search = ({ className = '', updateResultSearch }) => {
         />
       </div>
       <Button
+        id="search-submit"
         className="search__submit btn btn_brand"
         disabled={isDisableSearch}
         onClick={handleClickSearch}

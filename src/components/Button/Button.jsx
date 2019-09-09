@@ -4,6 +4,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 const Button = ({
+  id = '',
   className = '',
   type = 'brand',
   disabled = false,
@@ -11,6 +12,7 @@ const Button = ({
   onClick = () => {}
 }) => (
   <button
+    id={id}
     className={classNames('btn', 'btn_' + type, className)}
     type={'button'}
     onClick={onClick} // addOrRemoveRepo(item)
